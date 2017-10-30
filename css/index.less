@@ -1,0 +1,35 @@
+.header{
+	.row{
+		&>div{
+			height: 40px;
+			border: 1px solid gray;
+			text-align: center;
+			line-height: 40px;
+			&>a{
+				color: gray;
+				text-decoration: none;
+				font-size: 13px;
+			}
+		}
+		&>div:nth-child(n+3){
+			a{
+				margin-left: 10px;
+			}
+		}
+		&>div:first-child{
+			position: relative;
+			img{
+				display: none;;
+				position: absolute;
+				left: 40px;
+				top: 40px;
+			}
+			&:hover{
+				img{
+					display: block;
+				}
+				
+			}
+		}
+	}
+}
