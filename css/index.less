@@ -33,3 +33,527 @@
 		}
 	}
 }
+
+// 导航栏
+.wjs_default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  margin-bottom:0px;
+}
+.wjs_default .navbar-brand {
+  color: #777;
+  height: 80px;
+  span{
+  	font-size: 50px;
+  }
+  span:first-child{
+  	color:red;
+  }
+  span:last-child{
+  	color: #000;
+  }
+}
+.wjs_default .navbar-brand:hover,
+.wjs_default .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.wjs_default .navbar-text {
+  color: #777;
+}
+.wjs_default .navbar-nav > li > a {
+  color: #777;
+  height: 80px;
+  line-height: 50px;
+}
+.wjs_default .navbar-nav > li > a:hover,
+.wjs_default .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+  border-bottom: 3px solid red;
+}
+.wjs_default .navbar-nav > .active > a,
+.wjs_default .navbar-nav > .active > a:hover,
+.wjs_default .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+.wjs_default .navbar-nav > .disabled > a,
+.wjs_default .navbar-nav > .disabled > a:hover,
+.wjs_default .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.wjs_default .navbar-toggle {
+  border-color: #ddd;
+}
+.wjs_default .navbar-toggle:hover,
+.wjs_default .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.wjs_default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.wjs_default .navbar-collapse,
+.wjs_default .navbar-form {
+  border-color: #e7e7e7;
+}
+.wjs_default .navbar-nav > .open > a,
+.wjs_default .navbar-nav > .open > a:hover,
+.wjs_default .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+
+}
+@media (max-width: 767px) {
+  .wjs_default .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .wjs_default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .wjs_default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .wjs_default .navbar-nav .open .dropdown-menu > .active > a,
+  .wjs_default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .wjs_default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .wjs_default .navbar-nav .open .dropdown-menu > .disabled > a,
+  .wjs_default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .wjs_default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+    
+  }
+}
+.wjs_default .navbar-link {
+  color: #777;
+}
+.wjs_default .navbar-link:hover {
+  color: #333;
+}
+.wjs_default .btn-link {
+  color: #777;
+}
+.wjs_default .btn-link:hover,
+.wjs_default .btn-link:focus {
+  color: #333;
+}
+.wjs_default .btn-link[disabled]:hover,
+fieldset[disabled] .wjs_default .btn-link:hover,
+.wjs_default .btn-link[disabled]:focus,
+fieldset[disabled] .wjs_default .btn-link:focus {
+  color: #ccc;
+}
+
+// 轮播图
+.banner{
+	.banner_a{
+		height: 410px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: block;
+	}
+	.image_a{
+		background-image: url('../images/slide_01_2000x410.jpg');
+	}
+	.image_b{
+		background-image: url('../images/slide_02_2000x410.jpg');
+	}
+	.image_c{
+		background-image: url('../images/slide_03_2000x410.jpg');
+	}
+	.image_d{
+		background-image: url('../images/slide_04_2000x410.jpg');
+	}
+}
+.mobile_a{
+	display: block;
+	width: 100%;
+	img{
+		width: 100%;
+	}
+}
+
+// 信息列表
+.info{
+	padding-top: 50px;
+	.container{
+		max-width: 910px;
+	}
+	.row{
+		&>div{
+			margin-bottom: 20px;
+			padding-left: 30px;
+		}
+		.wjs_media{
+			a{
+				color: gray;
+				&:hover{
+					color: red;
+				}
+			}
+			.wjs_font{
+				font-size: 40px;
+			}
+		}
+	}
+}
+
+// 预约
+.book{
+	border-top:1px solid gray;
+  	border-bottom:1px solid gray;
+  	.container-fluid{
+  		padding: 20px 100px;
+  		.pull-left{
+  			a{
+  				color: red;
+  				border-bottom: 1px dashed red;
+  				&:hover{
+  					text-decoration: none;
+  				}
+
+  			}
+  		}
+  		.pull-right{
+  			a{
+  				color: gray;
+  				&:hover{
+  					color: red;
+  				}
+  			}
+  		}
+  	}
+}
+
+// 推荐布局
+.wjs-tabs {
+  border-bottom: 1px solid #ddd;
+}
+.wjs-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.wjs-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  // border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  color: gray;
+}
+.wjs-tabs > li > a:hover {
+  border-color: #eee #eee #ddd;
+}
+.wjs-tabs > li.active > a,
+.wjs-tabs > li.active > a:hover,
+.wjs-tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: skyblue;
+  // border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  border-bottom: 3px solid red;
+}
+.wjs-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.wjs-tabs.nav-justified > li {
+  float: none;
+}
+.wjs-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.wjs-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .wjs-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .wjs-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.wjs-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.wjs-tabs.nav-justified > .active > a,
+.wjs-tabs.nav-justified > .active > a:hover,
+.wjs-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .wjs-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .wjs-tabs.nav-justified > .active > a,
+  .wjs-tabs.nav-justified > .active > a:hover,
+  .wjs-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+
+// 推荐优惠券
+.price_ticket{
+	display: block;
+	background: red;
+	margin: 10px 0;
+	box-shadow: 2px 2px 3px gray;
+	&:hover{
+		text-decoration: none;
+	}
+	&::before{
+		color:white;
+		font-size: 40px;
+		position:absolute;
+	}
+	.ticket_right{
+		min-height: 150px;
+		float: right;
+		width: 108px;
+		padding-top: 20px;
+		border-left: 1px dashed white;
+		position: relative;
+		p{
+			color:white;
+			text-align: center;
+			font-weight: 700;
+            font-size:14px;
+            height:14px;
+		}
+		&::before{
+			content: "";
+			background: white;
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			top: -10px;
+			left: -10px;
+			border-radius: 50%;
+			box-shadow: inset 0 -1px gray;
+		}
+		&::after{
+			content: "";
+			background: white;
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			bottom: -10px;
+			left: -10px;
+			border-radius: 50%;
+			box-shadow: inset 0 1px gray;
+		}
+	}
+	.ticket_left{
+		min-height: 150px;
+		overflow: hidden;
+		h3{
+			text-align: center;
+			color: white;
+			margin-top: 10px;
+			margin-bottom: 5px;
+			font-size: 20px;
+			height: 20px;
+			overflow: hidden;                                                    
+		}
+		&>div{
+			margin-bottom: 10px;
+		}
+		p{
+			color: white;
+			font-size: 13px;
+			font-weight: 900;
+			height: 13px;
+			overflow: hidden;
+		}
+		&>div:nth-of-type(2n){
+			text-align: right;
+		}
+	}
+
+	&.white{
+		background: white;
+		color: gray;
+		p{
+			color: gray;
+		}
+		.ticket_right{
+			border-left: 1px dashed gray;
+		}
+		h3{
+			color: gray;
+		}
+	}
+}
+
+// 新闻布局
+.news{
+	h3{
+		text-align: center;
+		border-bottom: 1px solid gray;
+		padding-bottom: 10px;
+		position: relative;
+		&::before{
+			content: "";
+			position: absolute;
+			width: 8px;
+			height: 8px;
+			border: 1px solid gray;
+			border-radius: 50%;
+			background: white;
+			bottom:-4px;
+        	right:0px;
+		}
+	}
+}
+
+.wjs-newsTabs {
+  // border-bottom: 1px solid #ddd;
+}
+.wjs-newsTabs > li {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width:1200px){
+    .wjs-newsTabs > li {
+      width: 25%;
+    }
+}
+.wjs-newsTabs > li > a {
+  margin-right: 2px;
+  // line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #ccc;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  line-height: 70px;
+  padding: 0;
+}
+.wjs-newsTabs > li > a:hover {
+  // border-color: #eee #eee #ddd;
+  background: red;
+}
+.wjs-newsTabs > li.active > a,
+.wjs-newsTabs > li.active > a:hover,
+.wjs-newsTabs > li.active > a:focus {
+  // color: #555;
+  cursor: default;
+  background-color: #fff;
+  // border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  background: red;
+}
+.wjs-newsTabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.wjs-newsTabs.nav-justified > li {
+  float: none;
+}
+.wjs-newsTabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.wjs-newsTabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .wjs-newsTabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .wjs-newsTabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.wjs-newsTabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.wjs-newsTabs.nav-justified > .active > a,
+.wjs-newsTabs.nav-justified > .active > a:hover,
+.wjs-newsTabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .wjs-newsTabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .wjs-newsTabs.nav-justified > .active > a,
+  .wjs-newsTabs.nav-justified > .active > a:hover,
+  .wjs-newsTabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+
+.wjs-newsTabs{
+  position:relative;
+}
+.wjs-newsTabs .line{
+	height: 80%;
+	border: 1px dashed gray;
+	position: absolute;
+	top: 21px;
+	left: 34px;
+}
+
+// 第三分栏
+.news{
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	.tab-content{
+		ul{
+			list-style: none;
+			padding-top: 30px;
+		}
+		li{
+			padding: 10px 0;
+			a{
+				color: gray;
+			}
+		}
+
+	}
+}
+
+.footer{
+	text-align: center;
+	background: #eee;
+	padding-top: 20px;
+	h3{
+		margin-top: 0;
+	}
+	ul{
+		list-style: none;
+		display: inline-block;
+		li{
+			float: left;
+			font-size: 80px;
+			margin: 0 20px;
+			a{
+				color: gray;
+				text-decoration: none;
+			}
+		}
+
+	}
+}
